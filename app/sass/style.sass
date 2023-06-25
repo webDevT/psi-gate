@@ -1,8 +1,350 @@
 @import "vars"
 @import "fonts"
 
+//start global style 
+body 
+    font-size: 18px
+    font-weight: 300
+    font-family: $main-font
+.container-fluid 
+    width: 1420px 
+    max-width: 96vw
+    padding-left: 0 
+    padding-right: 0
+.h1 
+    font-size: 80px 
+    font-weight: 500 
+    font-family: $font-500
+    text-transform: uppercase
+    line-height: 107%
+    span 
+        color: $main-color
+.h2 
+    font-size: 50px 
+    font-weight: 300
+    font-weight: 500 
+    font-family: $font-500
+    text-transform: uppercase
+    margin-bottom: 80px
+.middle 
+    font-weight: 500
+    font-family: $font-500
+.button 
+    background: $main-color
+    color: #fff 
+    text-decoration: none
+    display: flex 
+    align-items: center 
+    justify-content: center
+    padding: 6.5px 20px
+    font-size: 22px
+    border-radius: 10px
+.button:hover 
+    background: $second-color
+    color: #fff
+.button:focus 
+    background: $focus    
+p 
+    margin-bottom: 25px
+    line-height: 1.4
+.section 
+    padding-bottom: 160px
+.section--first 
+    padding-top: 160px
+.section-header 
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    margin-bottom: 80px
+    .h2 
+        margin-bottom: 0
+//end global style
+
+//start header style
+.header
+    padding-top: 30px
+    font-family: $font-500
+    font-weight: 500
+    position: absolute 
+    top: 0 
+    left: 0 
+    width: 100%
+    
 
 
+    .container-fluid 
+        display: flex
+        align-items: center
+        justify-content: space-between
+.menu 
+    padding-right: 125px
+    ul
+        padding: 0 
+        margin: 0
+        display: flex 
+        align-items: center
+        list-style: none
+        li 
+            margin-right: 58px
+            position: relative
+            span 
+                align-items: center
+                position: relative
+.header__content
+    display: flex 
+    align-items: center
+.header__button
+    display: flex 
+    align-items: center
+    justify-content: center
+    padding: 5.7px 20px
+    border: 1.5px solid $main-color
+    border-radius: 10px
+    text-decoration: none
+    font-size: 22px
+    text-decoration: none 
+    color: $main-color
+    white-space: nowrap
+    background: #fff
+.header__button:hover 
+    color: $second-color
+    border-color: $second-color
+.header__button:focus
+    color: $focus
+    border-color: $focus
+.sub-menu
+    border-radius: 10px
+    border: 1.5px solid var(--main-color, #27548C)
+    background: #FFF
+    padding: 20px
+.menu-link
+    white-space: nowrap
+    padding: 2.5px 0
+    text-decoration: none
+    color: #000
+    display: block
+.menu-link:hover 
+    color: $second-color
+.menu-link:focus 
+    text-decoration: underline
+
+.sub-menu__wrapper
+    padding-top: 12px  
+    display: none
+    position: absolute
+    top: 100%
+    left: 0
+.menu-item__title
+    cursor: pointer
+    display: flex 
+    align-items: center
+    white-space: nowrap
+    svg 
+        margin-left: 10px
+        stroke: #000
+
+.menu-item:hover 
+    .menu-item__title
+        color: $main-color
+    .sub-menu__wrapper
+        display: block
+    svg 
+        transform: rotate(-180deg)
+        stroke: $main-color
+//end header style
+
+//start main-screen
+.main-screen 
+    padding-top: 212px
+    padding-bottom: 273px
+    background: url('../img/main-bg.svg')
+    background-position: top center
+    background-repeat: no-repeat
+.main-screen__content
+    width: 463px 
+    max-width: 100%
+.main-screen__content-wrapper
+    display: flex
+    justify-content: flex-end
+    padding-right: 140px
+.button-wrapper 
+    display: flex
+    justify-content: flex-start
+.main-screen__content
+    margin-top: -85px
+//end main-screen
+
+//start item section
+.item-section 
+    background: $main-color
+    color: #fff
+    padding-top: 30px 
+    padding-bottom: 30px
+.item 
+    display: flex 
+    align-items: center
+.item__text
+    margin-left: 20px
+//end item section
+
+//start video section
+.video-wrapper
+    width: 100% 
+    height: 390px
+    overflow: hidden
+    border-radius: 10px
+    position: relative
+.video-image
+    width: 100% 
+    height: 100%
+    object-fit: cover 
+    object-position: center
+.play-btn
+    position: absolute 
+    top: 50%
+    left: 50%  
+    cursor: pointer 
+    transform: translateX(-50%) translateY(-50%)
+.video-section
+    p 
+        width: 570px 
+        max-width: 100%
+//end video section
+
+//start why-us section
+.why-us
+    overflow: hidden
+.why-us__item 
+    width: 655px
+    max-width: 100%
+    display: flex
+    margin-bottom: 50px
+.why-us__item:nth-child(2)
+    margin-left: 330px
+.why-us__item:nth-child(3)
+    margin-left: 660px
+.why-us__item-num
+    width: 55px 
+    min-width: 55px
+    height: 55px 
+    border: 1.5px solid $main-color
+    border-radius: 50%
+    display: flex 
+    align-items: center
+    justify-content: center
+    font-size: 30px 
+    font-weight: 500
+    font-family: $font-500
+    color: $main-color
+    margin-right: 50px
+.why-us__text
+    span 
+        color: $main-color 
+        text-transform: uppercase
+        font-weight: 500 
+        font-family: $font-500
+
+//end why-us section
+
+//start reviews section 
+.slider__item
+    padding: 0 15px
+    min-height: 100%
+    p 
+        margin-bottom: 0
+.slider__item-content
+    width: 100% 
+    border: 1.5px solid $main-color 
+    border-radius: 10px
+    padding: 30px 40px
+    min-height: auto
+
+.slick-dots
+    display: flex 
+    margin: 0 
+    padding: 0
+    justify-content: center 
+    list-style: none
+    margin-top: 25px
+    li 
+        margin: 0 7.5px
+        button 
+            width: 15px 
+            height: 15px 
+            border: 1px solid $main-color
+            background: transparent 
+            font-size: 0
+            border-radius: 50%
+            outline: none 
+    .slick-active
+        button 
+            background: $main-color
+.reviews-author
+    width: 50px 
+    height: 50px 
+    min-width: 50px 
+    border-radius: 50% 
+    object-fit: cover 
+    object-position: center
+    display: block 
+    margin-right: 20px
+.slider-item__header
+    display: flex 
+    align-items: center
+    margin-bottom: 20px
+.reviews-title
+    font-size: 22px
+    line-height: 1
+.slider__item-content
+    min-height: 100%
+//end reviews section 
+
+//start footer style 
+.footer 
+    background: $dark-blue
+    color: #fff
+    padding-top: 30px 
+    padding-bottom: 15px
+.footer__content
+    padding-bottom: 30px
+    border-bottom: 1px solid $main-color 
+    margin-bottom: 15px
+    .container-fluid 
+        display: flex 
+        align-items: center
+        justify-content: space-between
+.copy 
+    text-align: center
+    font-size: 14px
+    color: $grey
+.footer-link
+    color: #fff 
+    text-decoration: none
+    margin: 0 22.5px
+    font-size: 22px
+.footer-link:hover
+    color: #fff 
+    text-decoration: none
+.footer__button
+    font-size: 22px
+    display: flex 
+    align-items: center
+    justify-content: center
+    padding: 5.7px 20px
+    border: 1.5px solid #fff
+    border-radius: 10px
+    text-decoration: none
+    font-size: 22px
+    text-decoration: none 
+    color: #fff
+    white-space: nowrap
+.footer__button:hover 
+    color: $second-color
+    border-color: $second-color
+.footer__button:focus
+    color: $focus
+    border-color: $focus
+//end footer style 
 
 @import "media"
 

@@ -3,57 +3,364 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px)
+	/**/
+	
+	.menu ul li 
+		margin-right: 4vw
+	.menu
+		padding-right: 7vw
+	.main-screen__content-wrapper
+		padding-right: 5vw
+	.main-screen__content 
+		margin-top: -75px
+	.why-us__item:nth-child(2)
+		margin-left: 20vw
+	.why-us__item:nth-child(3)
+		margin-left: 40vw
+	.why-us__item
+		width: 55vw
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px)
+	/**/
+	.menu
+		padding-right: 0vw
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1360px)
+	/**/		
+	.h1 
+		font-size: 58px
+	.main-screen__content
+		margin-top: -50px
+	.main-screen 
+		padding-top: 201px
+		padding-bottom: 285px
+		//background-size: 1750px
+		background-position: left -375px top -65px
+	.main-screen__content-wrapper
+		padding-right: 0
+	.main-screen__content 
+		width: 414px
+	.item 
+		flex-direction: column
+		text-align: center
+		width: 214px 
+		max-width: 100% 
+		margin-left: auto 
+		margin-right: auto
+	.item__text
+		margin-left: 0
+		margin-top: 10px
+		
+/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
+	.reviews-slider
+		.container-fluid 
+			width: 100vw 
+			max-width: 100vw
+			margin-right: 0
+	.slider__item
+		padding: 0 1vw
+	.slick-track 
+		margin-left: -2vw
+	
 
+	
 
-/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1100px)
+	/**/
+	.menu
+		padding-right: 0vw
+	.menu ul li 
+		margin-right: 2vw
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1000px)
+	/**/
+
+/* Large Devices, Wide Screens */
 @media only screen and (max-width : 992px)
 	/**/
+	.menu 
+		display: none
+	.menu-btn
+		cursor: pointer
+		margin-left: 20px
+		position: relative
+		z-index: 999
+	.menu-row
+		width: 40px 
+		height: 2px 
+		background: $main-color
+		margin-bottom: 8px
+		transition: all .3s
+	.menu-row:last-child 
+		margin-bottom: 0
+	.menu-btn.active 
+		.menu-row:last-child 
+			display: none
+		.menu-row:first-child
+			transform: rotate(30deg)
+			margin-bottom: 0
+			position: relative
+			top: 1px
+		.menu-row:nth-child(2)
+			transform: rotate(-30deg)
+			margin-bottom: 0
+	.menu.active 
+		display: block
+		position: absolute
+		right: 0 
+		top: 20px 
+		background: red
+		padding: 20px
+		padding-right: 30px
+		width: 607px
+		max-width: 100%
+		border-top-left-radius: 10px
+		border-bottom-left-radius: 10px
+		border: 1.5px solid $main-color
+		border-right: none
+		background: #fff
+		padding-bottom: 0
+		ul 
+			display: flex 
+			flex-wrap: wrap
+			justify-content: space-between
+	.sub-menu__wrapper
+		position: static 
+		display: block
+	.menu-item
+		width: 49%
+	.menu ul li 
+		margin-right: 0
+	.sub-menu 
+		border: none 
+		background: transparent 
+		padding: 0
+	.menu.active ul 
+		align-items: flex-start
+	.menu-item__title svg
+		display: none
+	.menu-item__title
+		color: $main-color
+	.sub-menu__wrapper
+		padding-top: 2.5px
+	.menu-item
+		margin-bottom: 20px
+	.main-screen__content
+		margin-top: 0px
+	.h1 
+		br 
+			display: none
+	.main-screen 
+		padding-top: 130px
+		padding-bottom: 122px
+		background-position: left -562px top 0px
+	.main-screen__content
+		width: 354px
+	.main-screen
+		.h1 
+			width: 720px 
+			max-width: 100%
+	.item-section
+		padding-top: 16px 
+		padding-bottom: 16px
+	.video-wrapper
+		height: 405px
+		margin-bottom: 30px
+	.video-section p
+		width: 764px
+	.why-us__item
+		margin-left: 0
+		width: 655px 
+		max-width: 100%
+	.why-us__item:nth-child(2)
+		margin-left: 0
+	.why-us__item:nth-child(3)
+		margin-left: 0
+	.footer-link
+		margin: 0 10px
+	.footer 
+		padding-top: 20px
+	.footer__content
+		padding-bottom: 20px
+	
+
+
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
+	.item 
+		margin-bottom: 20px
+	.item-section
+		padding-bottom: 0
+	.video-wrapper
+		height: 400px
+	.h2
+		br 
+			display: none
+	.slick-track 
+		margin-left: -10vw
+	.footer__content
+		.container-fluid 
+			flex-wrap: wrap
+	.footer-menu
+		width: 100%
+		order: 3
+		justify-content: center
+		display: flex 
+		align-items: center
+	.footer-logo
+		width: 50% 
+		order: 1
+	.footer__button-wrapper
+		width: 50% 
+		display: flex 
+		justify-content: flex-end
+		order: 2
+	.footer-link
+		padding: 0 3.5px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 650px)
+	.menu.active 
+		border: none
+		border-bottom: 1.5px solid $main-color
+		border-radius: 0
+		width: 100%
+		top: 0
+	.header 
+		font-size: 15px
+	.menu-link 
+		white-space: wrap
+	.header 
+		padding-top: 15px
+	.menu.active 
+		padding-top: 30px
+	.h1 
+		font-size: 27px
+	.main-screen
+		padding-top: 111px
+		padding-top: 100px
+	body 
+		font-size: 15px
+	.main-screen__content-wrapper
+		justify-content: flex-start
+	.button 
+		font-size: 19px
+	.main-screen 
+		background: url('../img/bg-mob.svg')
+		background-size: 100vw
+		background-position: bottom -50vw right
+	.item 
+		img
+			width: 40px
+	.why-us__item-num
+		margin-right: 15px
+	.footer-link
+		font-size: 19px
+	.footer__button
+		font-size: 19px
+	.copy 
+		font-size: 12px
+	.footer-menu 
+		margin-top: 19px
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
+	
+	.header 
+		padding-top: 15px
+	.logo 
+		img 
+			width: 103px
+	.header__button
+		font-size: 19px
+	.header__button 
+		padding-top: 6.3px 
+		padding-bottom: 6.3px
+	.menu-row
+		width: 30px
+	.menu-item
+		width: 100%
+	.container-fluid 
+		max-width: 91.667vw
+	.h1
+		font-size: 28px
+	.main-screen
+		background-size: 140vw
+		background-position: top left -40vw
+		background-repeat: no-repeat
+	.main-screen
+		background-size: 109vw
+		background-position: top 0vw left -9vw
+		background-repeat: no-repeat
+	.video-wrapper
+		width: 100vw
+		margin-left: -4.16vw
+		border-radius: 0
+		height: 250px
+	.h2 
+		font-size: 28px
+		margin-bottom: 50px
+	.section 
+		padding-bottom: 100px 
+	.section--first 
+		padding-top: 100px
+	p 
+		margin-bottom: 10px
+	.why-us__item-num
+		width: 45px 
+		height: 45px
+		min-width: 45px
+		font-size: 23px
+	.why-us__item
+		margin-bottom: 15px
+	.section-header
+		margin-bottom: 50px
+	.footer-link
+		margin: 0
+	.footer-menu
+		width: 100% 
+		display: flex 
+		justify-content: space-between
+
+	
+
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
+@media only screen and (max-width : 450px)
 	/**/
-
-
-/*==========  Mobile First  ==========*/
-
+	.main-screen
+		background-size: 140vw
+		background-position: top left -40vw
+		background-repeat: no-repeat
+	.slick-track 
+		margin-left: 0vw
+	.reviews-slider
+		.container-fluid 
+			max-width: 91.667vw
+			margin-left: auto 
+			margin-right: auto
+	.footer-logo
+		img 
+			width: 103px
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
+@media only screen and (max-width : 360px)
 	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
+	.video-wrapper
+		height: 190px
+	
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 370px)
 	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
-
-
-
+	.footer-link
+		font-size: 5vw
 
