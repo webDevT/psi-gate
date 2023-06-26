@@ -28,6 +28,15 @@ body
     margin-bottom: 80px
 .h2-45 
     margin-bottom: 45px
+.h3 
+    font-size: 35px 
+    font-weight: 300
+    text-transform: uppercase
+    width: 480px 
+    max-width: 100%
+.text-16 
+    font-size: 16px
+    
 .middle 
     font-weight: 500
     font-family: $font-500
@@ -449,7 +458,7 @@ p
     color: #fff
 //end growing style 
 
-
+//start thank you style
 .thank-you
     position: relative
     .h2 
@@ -463,12 +472,145 @@ p
     object-fit: cover
     border-top-left-radius: 10px 
     border-bottom-left-radius: 10px
+//end thank you style
 
+//start career page
 .career-main-screen
     background: url('../img/career-bg.svg')
     background-size: 1730px
     background-position: right 5vw top
+//end career page 
+
+//start news and press style
+.filters-wrapper
+    display: flex
+    justify-content: space-between 
+    align-items: center
+//end news and press style 
+
+/* The container must be positioned relative: */
+.custom-select
+    position: relative
+.custom-select select
+    display: none
+
+  
+
+
+/* Style the arrow inside the select element: */
+.select-selected:after
+    position: absolute
+    content: ""
+    top: 50%
+    transform: translateY(-50%)
+    right: 18px
+    height: 7.19px
+    width: 14.38px
+    background: url('../img/down-select.svg')
+    background-size: 100% 
+    background-position: center
+    
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after
+    background: url('../img/top.svg')
+    background-size: 100% 
+    background-position: center
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected
+    color: #000
+    cursor: pointer
+    min-width: 137px
+.select-selected
+    padding-right: 45px
+.select-items div
+    background: transparent
+    padding: 2.5px 0
+/* Style items (options): */
+.select-items
+    position: absolute
+    background-color: #fff
+    top: 110%
+    left: 0
+    right: 0
+    z-index: 99
+    border: 1.5px solid $main-color
+    border-radius: 10px
+    padding: 20px
+/* Hide the items when the select box is closed: */
+.select-hide
+    display: none
+.select-items div:hover, .same-as-selected
+    background-color: transparent
+    color: $main-color
+.select-selected
+    background-color: #fff
+    border: 1.5px solid $main-color
+    border-radius: 10px
+    font-size: 22px 
+    color: #000
+    padding: 10px 15px
+.custom-select
+    margin-right: 10px
+.custom-select:last-child
+    margin-right: 0px
+.filter-col
+    display: flex
+.search-input
+    height: 54px
+    border: 1.5px solid $main-color
+    border-radius: 10px
+    display: block
+    outline: none
+    width: 99px
+    text-align: center
+    font-size: 22px
+    transition: all .5s
+.search-input::placeholder 
+    color: #000
+.search-input:focus
+    text-align: left
+    width: 200px
+    padding-left: 17px 
+    padding-right: 17px
+.search-input:focus::placeholder 
+    color: #CBD5E1
+.news-item
+    padding-top: 30px
+    padding-bottom: 9px
+    border-bottom: 1px solid #CBD5E1
+    display: flex 
+    align-items: center 
+    justify-content: space-between
+.news-item__content
+    display: flex 
+    align-items: center
+.news-item__text-content
+    width: 331px 
+    margin-right: 30px
+.news-item__footer
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    margin-top: 15px
+.news__image
+    width: 450px 
+    height: 260px 
+    border-radius: 10px 
+    object-fit: cover 
+    object-position: center
+.news-item__footer
+    font-size: 18px 
+    color: $dark-grey
+.news-item__link
+    color: $dark-grey
+.news-item__link:hover
+    color: $second-color
+.news-item__link:focus 
+    color: $focus
+.news-item__title
+    margin-right: 15px
 @import "media"
+
 
 
 

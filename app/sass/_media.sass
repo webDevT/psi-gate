@@ -106,6 +106,9 @@
 	.career-main-screen
 		background-size: 1730px
 		background-position: right -35vw top
+	.news__image
+		width: 240px
+		height: 170px
 	
 	
 	
@@ -180,6 +183,7 @@
 		border-right: none
 		background: #fff
 		padding-bottom: 0
+		z-index: 999
 		ul 
 			display: flex 
 			flex-wrap: wrap
@@ -259,6 +263,21 @@
 	.career-main-screen
 		background-size: 1730px
 		background-position: right -45vw top
+	.news-item
+		flex-direction: column
+		align-items: flex-start
+	.news-item__content
+		width: 100% 
+		display: flex 
+		justify-content: space-between
+	.news-item__text-content
+		width: 100%
+	.h3 
+		font-size: 23px
+	.text-16 
+		font-size: 15px
+	.news-item__footer
+		font-size: 15px
 	
 
 
@@ -313,7 +332,7 @@
 	.career-main-screen
 		background-position: right -500px top -77px
 		background-size: 2000px
-	
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 650px)
@@ -361,6 +380,23 @@
 		margin-top: 19px
 	.about__content
 		margin-bottom: 10px
+	.news__image
+		width: 160px 
+		height: 116px
+	.select-selected,
+	.search-input
+		font-size: 19px
+	.select-items div,
+	.select-selected
+		min-width: 103px
+	.select-selected:after
+		right: 10px
+	.search-input
+		height: 43px
+	.select-selected
+		padding-top: 6px 
+		padding-bottom: 6px
+
 	
 
 
@@ -442,6 +478,20 @@
 		height: 145px
 	.career-main-screen
 		background-position: right -550px top -129px
+	.filters-wrapper
+		flex-direction: column
+		align-items: flex-start
+	.filter-col
+		margin-bottom: 20px
+	.news-item__content
+		flex-direction: column-reverse
+		align-items: flex-start
+	.news__image
+		width: 192px 
+		height: 117px
+		margin-top: 10px 
+		margin-bottom: 10px
+
 
 
 	
@@ -478,4 +528,10 @@
 	/**/
 	.footer-link
 		font-size: 5vw
+	.select-items div,
+	.select-selected
+		min-width: 27vw
+	.filter-col:last-child 
+		.custom-select
+			min-width: 38vw
 
