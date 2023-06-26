@@ -346,6 +346,109 @@ p
     border-color: $focus
 //end footer style 
 
+//start bread crambs style 
+.bread-crambs
+    padding-top: 120px
+    padding-bottom: 45px
+    .container-fluid 
+        display: flex
+        align-items: center
+    span 
+        padding-left: 10px 
+        padding-right: 10px
+.bread-crambs__link
+    font-size: 16px
+    text-decoration: none
+    color: #000
+.bread-crambs__link:hover 
+    color: #000
+.bread-crambs__link.active 
+    color: #6C7988
+//end bread crambs style
+
+//start about style
+.about 
+    .h2 
+        margin-bottom: 45px
+    img 
+        width: 100%
+        border-radius: 10px
+.about-page-main-screen
+    background: url('../img/about-bg.png')
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+//end about style
+
+//start support style
+.support-section 
+    background: $main-color
+    color: #fff
+    padding-top: 22px 
+    padding-bottom: 22px
+    font-size: 35px
+    text-transform: uppercase
+    white-space: nowrap
+    overflow: hidden
+//end support style 
+
+//start payment methods style 
+.payment-methods__item
+    text-align: center
+    border: 1px solid $main-color 
+    border-radius: 10px
+    display: flex 
+    justify-content: center 
+    padding: 28px
+    font-size: 27px
+    color: $main-color 
+    text-transform: uppercase
+    min-height: 100%
+.payment-methods__title
+    width: 450px 
+    max-width: 100%
+    line-height: 1.2
+
+//end payment methods style 
+
+//start growing style 
+.growing-list
+    display: flex
+    flex-wrap: wrap
+.growing-item
+    width: 570px
+    min-height: 220px
+    border: 1.5px solid $main-color
+    margin: 15px
+    border-radius: 10px
+    padding: 60px 55px 
+    padding-bottom: 20px
+    
+.growing-item:nth-child(3)
+    margin-left: 11%
+    
+.growing-item:first-child
+    background: $main-color
+    color: #fff
+.growing-item:last-child
+    background: $main-color
+    color: #fff
+//end growing style 
+
+
+.thank-you
+    position: relative
+    .h2 
+        padding-top: 90px
+.thank-you__img
+    position: absolute 
+    top: 0 
+    right: 0
+    width: 61.719vw
+    height: 300px
+    object-fit: cover
+    border-top-left-radius: 10px 
+    border-bottom-left-radius: 10px
 @import "media"
 
 
