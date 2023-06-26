@@ -36,6 +36,8 @@ body
     max-width: 100%
 .text-16 
     font-size: 16px
+.text-22 
+    font-size: 22px
     
 .middle 
     font-weight: 500
@@ -81,6 +83,10 @@ p
     margin-bottom: 80px
     .h2 
         margin-bottom: 0
+.section-header--45
+    margin-bottom: 45px
+.dark-grey 
+    color: $dark-grey
 //end global style
 
 //start header style
@@ -609,6 +615,30 @@ p
     color: $focus
 .news-item__title
     margin-right: 15px
+.article__img
+    width: 100%
+    height: 440px 
+    object-fit: cover 
+    object-position: center
+    border-radius: 10px
+    display: block 
+    margin-bottom: 40px
+.article-text
+    width: 810px 
+    max-width: 100%
+.article-footer
+    display: flex
+    justify-content: space-between 
+    align-items: center
+    margin-top: 45px
+    a 
+        color: $main-color
+        text-decoration: underline
+    a:hover 
+        text-decoration: underline
+        color: $second-color
+    a:focus 
+        color: $focus
 @import "media"
 
 
