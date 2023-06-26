@@ -26,6 +26,8 @@ body
     font-family: $font-500
     text-transform: uppercase
     margin-bottom: 80px
+.h2-45 
+    margin-bottom: 45px
 .middle 
     font-weight: 500
     font-family: $font-500
@@ -43,7 +45,19 @@ body
     background: $second-color
     color: #fff
 .button:focus 
-    background: $focus    
+    background: $focus   
+.button--transparent
+    background: #fff 
+    border: 1px solid $main-color
+    color: $main-color
+.button--transparent:hover
+    background: #fff 
+    border: 1px solid $second-color
+    color: $second-color
+.button--transparent:focus
+    background: #fff 
+    border: 1px solid $focus
+    color: $focus
 p 
     margin-bottom: 25px
     line-height: 1.4
@@ -449,6 +463,11 @@ p
     object-fit: cover
     border-top-left-radius: 10px 
     border-bottom-left-radius: 10px
+
+.career-main-screen
+    background: url('../img/career-bg.svg')
+    background-size: 1730px
+    background-position: right 5vw top
 @import "media"
 
 
