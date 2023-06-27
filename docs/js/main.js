@@ -5,4 +5,9 @@ $('.menu-btn').click(function(){
     $('.menu').toggleClass('active');
 })
 
+$('.faq-header').click(function(){
+    $(this).toggleClass('active');
+    $(this).parent().find('.faq-content').slideToggle();
+})
+
 });

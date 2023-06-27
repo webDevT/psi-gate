@@ -760,7 +760,59 @@ p
     p 
         width: 810px 
         max-width: 100%
+.section-item
+    .h3
+        width: 100%
+.section-item:last-child 
+    margin-bottom: 0
 //end prod serv style
+.blue-section 
+    background: $main-color
+    text-align: center
+    color: #fff
+    padding-top: 16px 
+    padding-bottom: 16px
+    .h4 
+        width: 1116px
+        max-width: 100%
+        margin-left: auto 
+        margin-right: auto
+        margin-bottom: 0
+
+//start faq style
+.faq-list
+    display: flex
+    justify-content: space-between
+.faq-col
+    width: 48%
+.faq-header
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    padding-top: 10px 
+    padding-bottom: 10px 
+    border-bottom: 1px solid #CBD5E1
+    cursor: pointer
+.faq-item__title
+    text-transform: uppercase 
+    color: $main-color
+.faq-item
+    margin-bottom: 30px
+    p 
+        margin-bottom: 10px
+.faq-content
+    padding-top: 10px
+    display: none
+.faq-arrow 
+    transition: all .3s
+    margin-left: 30px
+    display: block
+
+.faq-header.active
+    .faq-arrow 
+        transform: rotate(-180deg)
+//end faq style
+
 
 @import "media"
 
