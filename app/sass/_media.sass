@@ -123,6 +123,17 @@
 		height: 327px
 		object-fit: cover 
 		object-position: center
+	.ps-list
+		.col-xl-3:first-child
+			order: 1
+		.col-xl-3:nth-child(2)
+			order: 2
+		.col-xl-3:nth-child(3)
+			order: 4
+		.col-xl-3:nth-child(4)
+			order: 3
+		.col-xl-3 
+			margin-bottom: 20px
 	
 
 	
@@ -308,6 +319,14 @@
 		width: 100%
 		height: 327px
 		margin-bottom: 20px
+	.card-items
+		width: 764px 
+		max-width: 100%
+	.li-item
+		width: 726px 
+		max-width: 100%
+	.retail .payment-methods__item--18
+		padding: 43px 20px
 	
 
 
@@ -383,6 +402,36 @@
 		margin-left: 20px
 	.blue-section-wrapper
 		padding-bottom: 0
+	.benefits-list
+		.growing-item:first-child,
+		.growing-item:nth-child(3)
+			background: #fff
+			color: #000
+			margin-left: 0
+		.growing-item:nth-child(2),
+		.growing-item:nth-child(4)
+			background: $main-color
+			color: #fff
+	.card-item--full
+		flex-wrap: wrap
+		justify-content: flex-start
+		.card-item__num
+			margin-right: 15px
+		.card-item__title
+			width: auto
+		.card-item__text
+			margin-top: 15px
+	.card-item--full .card-item__text
+		width: 100%
+	.margin-35 
+		margin-bottom: 30px
+	.risk-item
+		flex-direction: column
+	.risk-title
+		min-width: 100%
+	
+		
+
 
 
 /* Extra Small Devices, Phones */
@@ -461,9 +510,40 @@
 		padding-bottom: 5px
 		padding-left: 2px 
 		padding-right: 2px
-	
+	.card-item__num
+		width: 45px 
+		min-width: 45px 
+		height: 45px
+		margin-right: 15px
+		font-size: 23px
+	.card-item
+		margin-bottom: 15px
+	.card-items
+		margin-bottom: 50px
+	.h3-45
+		margin-bottom: 20px
+	.section-item 
+		margin-bottom: 50px
+	.card-item--full .card-item__title
+		width: calc(100%  -  60px)
+	.retail
+		.col-md-6 
+			margin-bottom: 20px
 
-	
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 580px)
+	/**/
+	.ps-list
+		.col-xl-3:first-child
+			order: 1
+		.col-xl-3:nth-child(2)
+			order: 2
+		.col-xl-3:nth-child(3)
+			order: 3
+		.col-xl-3:nth-child(4)
+			order: 4
+		.col-xl-3 
+			margin-bottom: 20px
 
 
 
@@ -576,6 +656,13 @@
 		height: 270px
 	.blue-section-wrapper
 		padding-bottom: 0
+	.retail .payment-methods__item--18
+		padding: 35px 15px
+	.retail
+		.col-md-6 
+			margin-bottom: 15px
+	.risk-item
+		margin-bottom: 15px
 	
 
 
@@ -620,6 +707,9 @@
 		height: 300px
 	.prod-serv-img
 		height: 202px
+	.card-item--full .card-item__num
+		margin-right: 8px
+
 	
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 370px)
@@ -632,4 +722,6 @@
 	.filter-col:last-child 
 		.custom-select
 			min-width: 38vw
+	.retail .payment-methods__item--18
+		padding: 20px 15px
 
