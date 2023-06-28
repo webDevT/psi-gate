@@ -10,4 +10,10 @@ $('.faq-header').click(function(){
     $(this).parent().find('.faq-content').slideToggle();
 })
 
+// $('.tab').click(function(){
+//     $('.tab').removeClass('active');
+//     $(this).addClass('active');
+    
+// })
+
 });
