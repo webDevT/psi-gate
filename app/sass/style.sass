@@ -109,6 +109,8 @@ p
 //end global style
 
 //start header style
+.logo img
+    width: 150px
 .header
     padding-top: 30px
     font-family: $font-500
@@ -187,6 +189,8 @@ p
     display: flex 
     align-items: center
     white-space: nowrap
+    text-decoration: none 
+    color: #212529
     svg 
         margin-left: 10px
         stroke: #000
@@ -204,7 +208,7 @@ p
 //start main-screen
 .main-screen 
     padding-top: 212px
-    padding-bottom: 273px
+    padding-bottom: 265px
     background: url('../img/main-bg.svg')
     background-position: top center
     background-repeat: no-repeat
@@ -452,6 +456,10 @@ p
     color: $main-color 
     text-transform: uppercase
     min-height: 100%
+    text-decoration: none
+    color: $main-color
+.payment-methods__item:hover 
+    color: $main-color
 .payment-methods__title
     width: 450px 
     max-width: 100%
