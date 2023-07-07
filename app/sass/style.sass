@@ -167,23 +167,35 @@ p
     border: 1.5px solid var(--main-color, #27548C)
     background: #FFF
     padding: 20px
+    padding-right: 0
+.sub-sub-menu__wrapper
+    .menu-link
+        white-space: normal
+
 .menu-link
     white-space: nowrap
     padding: 2.5px 0
     text-decoration: none
     color: #000
     display: block
+    position: relative
+    padding-right: 20px
 .menu-link:hover 
     color: $second-color
 .menu-link:focus 
     text-decoration: underline
 
-.sub-menu__wrapper
+.sub-menu__wrapper,
+.sub-sub-menu__wrapper
     padding-top: 12px  
     display: none
     position: absolute
     top: 100%
     left: 0
+.sub-sub-menu__wrapper
+    top: 0 
+    right: 0px 
+    transform: translateX(100%)
 .menu-item__title
     cursor: pointer
     display: flex 
@@ -195,6 +207,10 @@ p
         margin-left: 10px
         stroke: #000
 
+.sub-menu-item__title
+    display: flex
+    svg 
+        transform: rotate(-90deg) !important
 .menu-item:hover 
     .menu-item__title
         color: $main-color
@@ -203,6 +219,11 @@ p
     svg 
         transform: rotate(-180deg)
         stroke: $main-color
+.menu-link:hover
+    .sub-sub-menu__wrapper
+        display: block
+    
+
 //end header style
 
 //start main-screen
