@@ -119,6 +119,7 @@ p
     top: 0 
     left: 0 
     width: 100%
+    z-index: 99
     
 
 
@@ -229,10 +230,33 @@ p
 //start main-screen
 .main-screen 
     padding-top: 212px
-    padding-bottom: 265px
-    background: url('../img/main-bg.svg')
-    background-position: top center
-    background-repeat: no-repeat
+    padding-bottom: 190px
+    position: relative
+    overflow: hidden
+    //background: url('../img/main-bg.svg')
+    //background-position: top center
+    //background-repeat: no-repeat
+    .container-fluid 
+        position: relative
+        z-index: 1
+.main-bg__image
+    position: absolute 
+    top: 0 
+    left: 50% 
+    transform: translate3d(-50%, 0, 0)
+    animation: anim-1 15s linear infinite
+@keyframes anim-1
+    0%
+       transform: translate3d(-48%, -7%, 0) rotate(3deg) scale(1.03)
+    25%
+       transform: translate3d(-50%, -2%, 0) rotate(0deg) scale(1.1)
+    50%
+       transform: translate3d(-50%, -2%, 0) rotate(3deg) scale(1.03)
+    75%
+       transform: translate3d(-50%, -2%, 0) rotate(0deg) scale(1.0)
+    100%
+       transform: translate3d(-48%, -7%, 0) rotate(3deg) scale(1.03)
+
 .main-screen__content
     width: 463px 
     max-width: 100%
