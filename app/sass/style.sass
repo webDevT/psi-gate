@@ -1197,10 +1197,40 @@ p
     .col-xl-4 
         margin-bottom: 20px
 .support-section
+    display: flex 
+    justify-content: flex-start
+    overflow: hidden
     span
-        padding: 0 5%
+        padding-right: 7%
 .contact .textarea-wrapper
     width: 100%
+.marquee
+    height: 100px
+    width: 100%
+    overflow: hidden
+    position: relative
+    background: $main-color
+    color: #fff
+    padding-top: 22px 
+    padding-bottom: 22px
+    font-size: 35px
+    text-transform: uppercase
+.marquee div
+    display: block
+    width: 200%
+    height: 40px
+    position: absolute
+    overflow: hidden
+    animation: marquee 8s linear infinite
+.marquee span
+    float: left
+    width: 12.5%
+@keyframes marquee
+    0%
+        left: 0
+    100%
+        left: -100%
+
 @import "media"
 
 
