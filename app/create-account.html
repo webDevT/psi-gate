@@ -8,7 +8,12 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 	<link rel="stylesheet" href="css/style.min.css">
+
 </head>
 <body>
 
@@ -147,7 +152,7 @@
 
 		<div class="row">
 
-			<div class="col-xl-5 col-lg-8">
+			<div class="col-xl-5 col-lg-8 animate__animated animate__fadeInLeft wow" data-wow-offset="300">
 				<h2 class="h2 h2-45">
 					Create an account
 				</h2>
@@ -197,7 +202,7 @@
 
 			</div>
 
-			<div class="col-xl-7 col-lg-4">
+			<div class="col-xl-7 col-lg-4 animate__animated animate__fadeInRight wow" data-wow-offset="300">
 				<img src="img/ca.png" alt="" class="create-account-img">
 			</div>
 
@@ -333,6 +338,13 @@ console.log("ddd");
   $(this).find('.slider__item').css('height', slickTrackHeight + 'px');		      
 });
   </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>new WOW().init();</script>
+
+<script>
+	document.documentElement.style.setProperty('--animate-duration', '2s');
+</script>
 
 
 	<script src="js/main.js"></script>

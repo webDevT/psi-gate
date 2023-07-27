@@ -8,6 +8,10 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -163,7 +167,7 @@
 			</h3>
 
 			<div class="faq-list">
-				<div class="faq-col">
+				<div class="faq-col animate__animated animate__fadeInLeft wow" data-wow-offset="300">
 
 					<div class="faq-item">
 						<div class="faq-header">
@@ -332,7 +336,7 @@
 
 				</div>
 
-				<div class="faq-col">
+				<div class="faq-col animate__animated animate__fadeInRight wow" data-wow-offset="300">
 
 					
 
@@ -554,7 +558,7 @@
 
 			<div class="row">
 	
-				<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+				<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 animate__animated animate__fadeInUp wow" data-wow-offset="300">
 					<div class="contact-item">
 						<div class="contact-item__icon-wrapper">
 							<img src="img/i1.svg" alt="">
@@ -567,7 +571,7 @@
 					</div>
 				</div>
 
-				<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+				<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 animate__animated animate__fadeInUp wow" data-wow-offset="300">
 					<div class="contact-item">
 						<div class="contact-item__icon-wrapper">
 							<img src="img/i2.svg" alt="">
@@ -580,7 +584,7 @@
 					</div>
 				</div>
 
-				<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+				<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 animate__animated animate__fadeInUp wow" data-wow-offset="300">
 					<div class="contact-item">
 						<div class="contact-item__icon-wrapper">
 							<img src="img/i3.svg" alt="">
@@ -593,7 +597,7 @@
 					</div>
 				</div>
 
-				<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+				<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 animate__animated animate__fadeInUp wow" data-wow-offset="300">
 					<div class="contact-item">
 						<div class="contact-item__icon-wrapper">
 							<img src="img/i4.svg" alt="">
@@ -719,7 +723,12 @@
 });
 	</script>
 	
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	
+	<script>
+		document.documentElement.style.setProperty('--animate-duration', '2s');
+	</script>
 
 	<script src="js/main.js"></script>
 </body>

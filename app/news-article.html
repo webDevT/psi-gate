@@ -8,6 +8,10 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -149,7 +153,7 @@
 <section class="section article">
 	<div class="container-fluid">
 		<div class="section-header section-header--45">
-			<h2 class="h2">
+			<h2 class="h2 animate__animated animate__fadeInUp wow" data-wow-offset="300">
 				We are launching a new feature
 			</h2>
 
@@ -158,7 +162,7 @@
 			</div>
 		</div>
 
-		<img src="img/article.png" alt="" class="article__img">
+		<img src="img/article.png" alt="" class="article__img animate__animated animate__fadeInUp wow" data-wow-offset="300">
 
 		<p class="article-text text-16">
 			The payment system is introducing a new feature that will allow users to set up automatic balance replenishment. With this feature, users can specify a particular amount to be automatically added to their account balance at regular intervals, eliminating the need to manually top up their accounts every time they need to make a purchase or payment.
@@ -313,6 +317,12 @@ console.log("ddd");
 });
   </script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script>new WOW().init();</script>
+	
+	<script>
+		document.documentElement.style.setProperty('--animate-duration', '2s');
+	</script>
 
 	<script src="js/main.js"></script>
 </body>
